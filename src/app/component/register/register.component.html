@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col"></div>
+        <div class="col-4">
+            <div class="card shadow">
+                <div class="card-body">
+                    <form autocomplete="off">
+
+                        <div class="mb-3 text-center">
+                            <h4 class="text-dark text-muted">Register</h4>
+                        </div>
+                        <hr>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" name="email" [(ngModel)]="email" placeholder="Enter Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control" name="password"
+                                [(ngModel)]='password' placeholder="Enter Password">
+                        </div>
+
+                        <div class="mb-2 text-center">
+                            <button type="submit" class="btn btn-info" (click)="register()">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <a style="text-decoration: none;" routerLink="/login">Already Have Account?
+                        <span class="text-danger">Login</span></a>
+                </div>
+
+                <div class="col-md-6 ">
+                    <a class="text-dark" style="text-decoration: none;"> Forgote Password?</a>
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+
+    </div>
+</div>
